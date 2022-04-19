@@ -24,15 +24,13 @@ for ($i=0;$i<7;$i++){
 }
 $days=['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'];
 foreach ($allsubj as $key=>$value){
-    echo "<div style='border: 10px; width=20px;height=30px'>";
     foreach($value as $supervalue){
         if (in_array($supervalue,$days)){
             echo "<p style='color:red'>$supervalue</p>";
         }else{
-            echo "<div style='border: solid;width=20px;height=30px'> $supervalue </div>";
+            echo "<div class='ramm' style='border:solid 3px;border-width: 1px 2px 2px 2px;'> $supervalue </div>";
         }
         
     }
-    echo "</div>";
 }
 ?>
